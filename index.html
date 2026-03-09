@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hitting Counter</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  text-align:center;
+  background:black;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+button{
+  padding:20px 40px;
+  font-size:30px;
+  border:none;
+  border-radius:10px;
+  background:red;
+  color:white;
+  cursor:pointer;
+}
+
+h1{
+  font-size:80px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+<h1 id="count">0</h1>
+<button onclick="hit()">HIT</button>
+</div>
+
+<script>
+let count = 0;
+
+function hit(){
+  count++;
+  document.getElementById("count").innerText = count;
+}
+</script>
+
+</body>
+</html>
